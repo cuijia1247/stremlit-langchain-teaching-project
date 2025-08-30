@@ -1,36 +1,20 @@
-# LangChain核心包
-langchain==0.1.0
-langchain-core==0.1.0
-langchain-community==0.0.13
-
-# OpenAI兼容API支持（DeepSeek使用OpenAI兼容格式）
-openai>=1.0.0
-langchain-openai==0.0.5
+# 项目核心依赖包
 
 # Streamlit用于Web界面
 streamlit>=1.28.0
 
-# 环境变量管理
+# LangChain核心包（项目实际使用的）
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-openai>=0.0.5
+
+# OpenAI API支持（DeepSeek和其他OpenAI兼容API）
+openai>=1.0.0
+
+# 环境变量管理（如果需要使用.env文件）
 python-dotenv>=1.0.0
 
-# HTTP请求
-requests>=2.31.0
-
-# 异步支持
-aiohttp>=3.8.0
-
-# JSON处理增强
-pydantic>=2.0.0
-
-# 可选：文档处理
-pypdf>=3.17.0
-python-docx>=0.8.11
-
-# 可选：向量数据库
-faiss-cpu>=1.7.4
-chromadb>=0.4.0
-
-# 可选：文本分割
-tiktoken>=0.5.0
+# LangChain社区包（解决导入依赖问题）
+langchain-community>=0.0.13
 
 
